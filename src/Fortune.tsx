@@ -1,13 +1,16 @@
 // src/Fortune.tsx
 import React, { useState } from "react";
 import { fortunes, Fortune as FortuneType } from "./data";
+import './App.css';
 
 const Fortune: React.FC = () => {
     const [fortune, setFortune] = useState<FortuneType | null>(null);
+    
     const drawFortune = () => {
         const randomIndex = Math.floor(Math.random() * fortunes.length);
         setFortune(fortunes[randomIndex]);
     };
+    
     const resetFortune = () => {
         setFortune(null);
     };

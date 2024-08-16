@@ -4,18 +4,18 @@ export interface Fortune {
     name: string;
     message: string;
     image: string;
-  }
-  
-  export const fortunes: Fortune[] = [
+}
+
+export const fortunes: Fortune[] = [
     {
-      name: "じろけん",
-      message: "今日は素晴らしい一日になるでしょう！",
-      image: "/images/jiroken.jpg"
+        name: "じろけん",
+        message: "今日は素晴らしい一日になるでしょう！",
+        image: "/images/jiroken.jpg"
     },
     {
-      name: "かわすけ",
-      message: "おじさんっていうな！",
-      image: "/images/jiroken.jpg"
+        name: "かわすけ",
+        message: "おじさんっていうな！",
+        image: "/images/jiroken.jpg"
     },
     {
         name: "さりゅ",
@@ -77,4 +77,4 @@ export interface Fortune {
         message: "おじさんっていうな！",
         image: "/images/jiroken.jpg"
     },
-  ];
+    ];

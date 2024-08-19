@@ -50,16 +50,16 @@ const Fortune: React.FC = () => {
             fortune && (
                     <div style={{ marginTop: "20px" }}>
                         <img src={fortune.image} alt={fortune.name} style={{ width: "400px" }} />
-                        <div style={{ marginTop: "10px" }}>
+                        <div style={{ marginTop: "10px"}}>
                             <a
                                 href={fortune.image}
                                 download={fortune.name + ".jpg"}
-                                style={{ marginLeft: "10px", textDecoration: "none" }}
+                                style={{ textDecoration: "none" }}
                             >
-                                <button>画像を保存</button>
+                                <button style={{ width: "300px"  }}>画像を保存</button>
                             </a>
                         </div>
-                        <button onClick={resetFortune} style={{ marginTop: "10px" }}>
+                        <button onClick={resetFortune} style={{ marginTop: "10px", width: "300px" }}>
                             もう一度引く
                         </button>
                     </div>

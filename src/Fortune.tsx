@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { fortunes, Fortune as FortuneType } from "./data";
 import './App.css';
 
-
 const Fortune: React.FC = () => {
     const [fortune, setFortune] = useState<FortuneType | null>(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -35,7 +34,7 @@ const Fortune: React.FC = () => {
             setFortune(selectedFortune);
             setIsLoading(false);
         }, 3000);
-    };
+    };  
     
     const resetFortune = () => {
         setFortune(null);
@@ -44,17 +43,24 @@ const Fortune: React.FC = () => {
     return (
         <div style={{ textAlign: "center", padding: "20px" }}>
         <h1>メンターガチャ</h1>
-        {!isLoading &&  <button onClick={drawFortune}>ガチャを引く</button>}
+        {fortune == null && !isLoading &&  <button onClick={drawFortune}>ガチャを引く</button>}
         {isLoading ? (
-            <img src="./images/dummy.gif" alt="loading" style={{ width: "200px", marginTop: "20px" }} />
+            <img src="./images/gacha.gif" alt="loading" style={{ width: "200px", marginTop: "20px" }} />
         ) : (
             fortune && (
                     <div style={{ marginTop: "20px" }}>
-                        {/* <img src={fortune.image} alt={fortune.name} style={{ width: "200px" }} /> */}
-                        <p>src={fortune.name}</p>
-                        <p>src={fortune.rank}</p>
+                        <img src={fortune.image} alt={fortune.name} style={{ width: "200px" }} />
+                        <div style={{ marginTop: "10px" }}>
+                            <a
+                                href={fortune.image}
+                                download={fortune.name + ".jpg"}
+                                style={{ marginLeft: "10px", textDecoration: "none" }}
+                            >
+                                <button>画像を保存</button>
+                            </a>
+                        </div>
                         <button onClick={resetFortune} style={{ marginTop: "10px" }}>
-                            リセット
+                            もう一度引く
                         </button>
                     </div>
                 )

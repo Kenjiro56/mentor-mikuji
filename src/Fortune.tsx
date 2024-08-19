@@ -45,7 +45,7 @@ const Fortune: React.FC = () => {
         <h1>メンターガチャ</h1>
         {fortune == null && !isLoading &&  <button onClick={drawFortune}>ガチャを引く</button>}
         {isLoading ? (
-            <img src="./images/gacha.gif" alt="loading" style={{ width: "200px", marginTop: "20px" }} />
+            <img src="./images/gacha.gif" alt="loading" style={{ width: "400px", marginTop: "20px" }} />
         ) : (
             fortune && (
                     <div style={{ marginTop: "20px" }}>

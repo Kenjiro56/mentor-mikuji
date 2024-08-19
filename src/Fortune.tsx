@@ -49,7 +49,7 @@ const Fortune: React.FC = () => {
         ) : (
             fortune && (
                     <div style={{ marginTop: "20px" }}>
-                        <img src={fortune.image} alt={fortune.name} style={{ width: "200px" }} />
+                        <img src={fortune.image} alt={fortune.name} style={{ width: "400px" }} />
                         <div style={{ marginTop: "10px" }}>
                             <a
                                 href={fortune.image}

@@ -41,14 +41,7 @@ const Fortune: React.FC = () => {
     };
 
     return (
-        <div style={{ textAlign: "center", padding: "20px" }}>
-        {/* {fortune == null 
-            && 
-            <div>
-                <h1>メンターガチャ</h1>
-                <img src ="./images/favicon_MG.png" style={{ width: "400px" }}/>
-            </div>
-        } */}
+        <div style={{ textAlign: "center", padding: "20px"}}>
         {fortune == null && !isLoading && 
             <div>
                 <h1>メンターガチャ</h1>

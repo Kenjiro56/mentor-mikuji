@@ -7,27 +7,34 @@ import './App.css';
 const Fortune: React.FC = () => {
     const [fortune, setFortune] = useState<FortuneType | null>(null);
     const [isLoading, setIsLoading] = useState(false);
+
+    // SEを再生するための関数
+    const playSound = () => {
+        const audio = new Audio("./sounds/dramroll.mp3");
+        audio.play();
+    };
     
     const drawFortune = () => {
         setIsLoading(true);
+        playSound();
         setTimeout(() => {
-        const randomValue = Math.random();
+            const randomValue = Math.random();
 
-        let selectedFortune: FortuneType;
-        if (randomValue < 0.1) {
-            // Sランクの中からランダムに選ぶ
-            selectedFortune = fortunes.filter(f => f.rank === "S")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "S").length)];
-        } else if (randomValue < 0.3) {
-            // Aランクの中からランダムに選ぶ
-            selectedFortune = fortunes.filter(f => f.rank === "A")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "A").length)];
-        } else {
-            // Bランクの中からランダムに選ぶ
-            selectedFortune = fortunes.filter(f => f.rank === "B")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "B").length)];
-        }
+            let selectedFortune: FortuneType;
+            if (randomValue < 0.1) {
+                // Sランクの中からランダムに選ぶ
+                selectedFortune = fortunes.filter(f => f.rank === "S")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "S").length)];
+            } else if (randomValue < 0.3) {
+                // Aランクの中からランダムに選ぶ
+                selectedFortune = fortunes.filter(f => f.rank === "A")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "A").length)];
+            } else {
+                // Bランクの中からランダムに選ぶ
+                selectedFortune = fortunes.filter(f => f.rank === "B")[Math.floor(Math.random() * fortunes.filter(f => f.rank === "B").length)];
+            }
 
-        setFortune(selectedFortune);
-        setIsLoading(false);
-     }, 2000);
+            setFortune(selectedFortune);
+            setIsLoading(false);
+        }, 3000);
     };
     
     const resetFortune = () => {

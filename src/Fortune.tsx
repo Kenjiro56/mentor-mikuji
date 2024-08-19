@@ -42,8 +42,20 @@ const Fortune: React.FC = () => {
 
     return (
         <div style={{ textAlign: "center", padding: "20px" }}>
-        {fortune == null && <h1>メンターガチャ</h1>}
-        {fortune == null && !isLoading &&  <button onClick={drawFortune}>ガチャを引く</button>}
+        {/* {fortune == null 
+            && 
+            <div>
+                <h1>メンターガチャ</h1>
+                <img src ="./images/favicon_MG.png" style={{ width: "400px" }}/>
+            </div>
+        } */}
+        {fortune == null && !isLoading && 
+            <div>
+                <h1>メンターガチャ</h1>
+                <img src ="./images/favicon_MG.png" alt="gacha" style={{ width: "400px", display: "block" }}/>
+                <button onClick={drawFortune}>ガチャを引く</button>
+            </div>      
+        }
         {isLoading ? (
             <img src="./images/gacha.gif" alt="loading" style={{ width: "400px", marginTop: "20px" }} />
         ) : (

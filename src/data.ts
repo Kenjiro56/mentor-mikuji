@@ -52,17 +52,17 @@ export const fortunes: Fortune[] = [
     // },
     {
         name: "てんとー",
-        image: "/images/tento-S.jpg",
+        image: "/images/tento-S.png",
         rank: "S"
     },
     {
         name: "てんとー",
-        image: "/images/tento-A.jpg",
+        image: "/images/tento-A.png",
         rank: "A"
     },
     {
         name: "てんとー",
-        image: "/images/tento-B.jpg",
+        image: "/images/tento-B.png",
         rank: "B"
     },
     {
@@ -142,32 +142,32 @@ export const fortunes: Fortune[] = [
     },
     {
         name: "かわすけ",
-        image: "/images/kawasuke-S.jpg",
+        image: "/images/kawasuke-S.png",
         rank: "S"
     },
     {
         name: "かわすけ",
-        image: "/images/kawasuke-A.jpg",
+        image: "/images/kawasuke-A.png",
         rank: "A"
     },
     {
         name: "かわすけ",
-        image: "/images/kawasuke-B.jpg",
+        image: "/images/kawasuke-B.png",
         rank: "B"
     },
     {
         name: "にとりん",
-        image: "/images/nitorin-S.jpg",
+        image: "/images/nitorin-S.png",
         rank: "S"
     },
     {
         name: "にとりん",
-        image: "/images/nitorin-A.jpg",
+        image: "/images/nitorin-A.png",
         rank: "A"
     },
     {
         name: "にとりん",
-        image: "/images/nitorin-B.jpg",
+        image: "/images/nitorin-B.png",
         rank: "B"
     },
     {

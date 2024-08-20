@@ -50,21 +50,21 @@ export const fortunes: Fortune[] = [
     //     image: "/images/mo-mon-B.jpg",
     //     rank: "B"
     // },
-    // {
-    //     name: "てんとー",
-    //     image: "/images/tento-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "てんとー",
-    //     image: "/images/tento-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "てんとー",
-    //     image: "/images/tento-B.jpg",
-    //     rank: "B"
-    // },
+    {
+        name: "てんとー",
+        image: "/images/tento-S.jpg",
+        rank: "S"
+    },
+    {
+        name: "てんとー",
+        image: "/images/tento-A.jpg",
+        rank: "A"
+    },
+    {
+        name: "てんとー",
+        image: "/images/tento-B.jpg",
+        rank: "B"
+    },
     {
         name: "じろけん",
         image: "/images/jiroken-S.jpg",
@@ -140,36 +140,36 @@ export const fortunes: Fortune[] = [
         image: "/images/ayachi-B.jpg",
         rank: "B"
     },
-    // {
-    //     name: "かわすけ",
-    //     image: "/images/kawasuke-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "かわすけ",
-    //     image: "/images/kawasuke-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "かわすけ",
-    //     image: "/images/kawasuke-B.jpg",
-    //     rank: "B"
-    // },
-    // {
-    //     name: "にとりん",
-    //     image: "/images/nitorin-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "にとりん",
-    //     image: "/images/nitorin-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "にとりん",
-    //     image: "/images/nitorin-B.jpg",
-    //     rank: "B"
-    // },
+    {
+        name: "かわすけ",
+        image: "/images/kawasuke-S.jpg",
+        rank: "S"
+    },
+    {
+        name: "かわすけ",
+        image: "/images/kawasuke-A.jpg",
+        rank: "A"
+    },
+    {
+        name: "かわすけ",
+        image: "/images/kawasuke-B.jpg",
+        rank: "B"
+    },
+    {
+        name: "にとりん",
+        image: "/images/nitorin-S.jpg",
+        rank: "S"
+    },
+    {
+        name: "にとりん",
+        image: "/images/nitorin-A.jpg",
+        rank: "A"
+    },
+    {
+        name: "にとりん",
+        image: "/images/nitorin-B.jpg",
+        rank: "B"
+    },
     {
         name: "さりゅ",
         image: "/images/saryu-S.jpg",

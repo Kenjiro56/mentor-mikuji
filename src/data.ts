@@ -5,21 +5,21 @@ export type Fortune = {
 };
 
 export const fortunes: Fortune[] = [
-    // {
-    //     name: "もつ",
-    //     image: "/images/motsu-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "もつ",
-    //     image: "/images/motsu-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "もつ",
-    //     image: "/images/motsu-B.jpg",
-    //     rank: "B"
-    // },
+    {
+        name: "もつ",
+        image: "/images/motsu-S.png",
+        rank: "S"
+    },
+    {
+        name: "もつ",
+        image: "/images/motsu-A.png",
+        rank: "A"
+    },
+    {
+        name: "もつ",
+        image: "/images/motsu-B.png",
+        rank: "B"
+    },
     {
         name: "ふくら",
         image: "/images/fukura-S.jpg",
@@ -185,19 +185,19 @@ export const fortunes: Fortune[] = [
         image: "/images/saryu-B.jpg",
         rank: "B"
     },
-    // {
-    //     name: "スイッチロー",
-    //     image: "/images/switchro-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "スイッチロー",
-    //     image: "/images/switchro-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "スイッチロー",
-    //     image: "/images/switchro-B.jpg",
-    //     rank: "B"
-    // },
+    {
+        name: "スイッチロー",
+        image: "/images/switchro-S.jpg",
+        rank: "S"
+    },
+    {
+        name: "スイッチロー",
+        image: "/images/switchro-A.jpg",
+        rank: "A"
+    },
+    {
+        name: "スイッチロー",
+        image: "/images/switchro-B.jpg",
+        rank: "B"
+    },
 ];

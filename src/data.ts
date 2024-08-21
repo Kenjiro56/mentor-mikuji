@@ -35,21 +35,21 @@ export const fortunes: Fortune[] = [
         image: "/images/fukura-B.jpg",
         rank: "B"
     },
-    // {
-    //     name: "モーモン",
-    //     image: "/images/mo-mon-S.jpg",
-    //     rank: "S"
-    // },
-    // {
-    //     name: "モーモン",
-    //     image: "/images/mo-mon-A.jpg",
-    //     rank: "A"
-    // },
-    // {
-    //     name: "モーモン",
-    //     image: "/images/mo-mon-B.jpg",
-    //     rank: "B"
-    // },
+    {
+        name: "モーモン",
+        image: "/images/mo-mon-S.png",
+        rank: "S"
+    },
+    {
+        name: "モーモン",
+        image: "/images/mo-mon-A.png",
+        rank: "A"
+    },
+    {
+        name: "モーモン",
+        image: "/images/mo-mon-B.png",
+        rank: "B"
+    },
     {
         name: "てんとー",
         image: "/images/tento-S.png",
